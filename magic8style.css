@@ -5,18 +5,86 @@
     color: #fff;
     font-family: 'Monoton', cursive;
     font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 30px;
 }
 
 p {
     text-align: center;
     font-size: 2em;
+    /*z-index: 2;*/
 }
 
-#eightball {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
 
+main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.border {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(0deg, #000, #272727);
+}
+
+.border:before,
+.border:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094,
+            #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.border:after {
+    filter: blur(50px);
+}
+
+
+#eightball-holder {
+    z-index: 0;
+    margin: 0;
+    height: 100%;
+    width: auto;
+
+}
+
+/* highest z index so the eightball is on top of other items*/
+#eightball {
+    /* display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto; */
+    z-index: 1;
+    height: 100%;
+    width: 100%;
 }
 
 #eightball:hover {
@@ -24,4 +92,8 @@ p {
     /* display: flex;
     justify-content: center;
     align-items: center; */
+}
+
+.container {
+    margin: 0;
 }
