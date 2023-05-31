@@ -1,4 +1,5 @@
 
+
 async function getMusic() {
     
     const url = 'https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem';
@@ -16,10 +17,12 @@ async function getMusic() {
         //console.log(result);
         var resultParsed = (JSON.parse(result));
         //to get to mp3
-        //console.log(resultParsed.data[0].preview);
+        // console.log(resultParsed.data[0]);
         var track = resultParsed.data[0].preview; 
         // console.log(track);
         // console.log(typeof(track));
+
+        // console.log(resultParsed.data[0].artist.id);
 
         //need to create audio html element to play it
         //example:
@@ -46,15 +49,56 @@ async function getMusic() {
 }
 
 function playMusic () {
-
-var Audioelement = document.getElementById("myAudio");
-console.log(Audioelement); //currently returns null bc items need to be placed
+// var Audioelement = document.getElementById("myAudio");
+//console.log(Audioelement); //currently returns null bc items need to be placed
 //need to make button
+var Audioelement = document.getElementById("myAudio");
         Audioelement.play(); 
 }
+
+function pauseMusic () {
+    //console.log(Audioelement); //currently returns null bc items need to be placed
+    //need to make button
+    var Audioelement = document.getElementById("myAudio");
+        Audioelement.pause(); 
+    }
 
 // console.log(track);
 
 getMusic(); 
 
 document.getElementById("playbutton").addEventListener('click', playMusic);
+document.getElementById("pausebutton").addEventListener('click', pauseMusic);
+document.getElementById("downvolbutton").addEventListener('click', adjustVolumeDown);
+document.getElementById("upvolbutton").addEventListener('click', adjustVolumeUp);
+
+var volumeNumber = 1; 
+
+function adjustVolumeDown() {
+    //https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/volume
+    var Audioelement = document.getElementById("myAudio");
+    var newVolumeNumber = volumeNumber - 0.1;
+    if (newVolumeNumber <= 0) {
+        newVolumeNumber === 0;
+    }
+    else {
+    Audioelement.volume = newVolumeNumber;
+    //console.log(Audioelement.volume);
+    return volumeNumber = newVolumeNumber;
+}
+}
+
+function adjustVolumeUp() {
+    //https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/volume
+    var Audioelement = document.getElementById("myAudio");
+    var newVolumeNumber = volumeNumber + 0.1;
+
+    if (newVolumeNumber >= 1) {
+        newVolumeNumber === 1;
+    }
+    else {
+    Audioelement.volume = newVolumeNumber;
+    //console.log(Audioelement.volume);
+    return volumeNumber = newVolumeNumber;
+}
+}
