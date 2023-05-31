@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    background-color: #462749;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: 'Happy Monkey', cursive;
+}
+
+#dadjokecontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 20px; */
+    /* font-size: 4em; */
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #124559;
+}
