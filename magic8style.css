@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
 * {
-    background-color: #36454F; 
+    background-color: #36454F;
     color: #fff;
     font-family: 'Monoton', cursive;
     font-size: 16px;
@@ -12,6 +12,16 @@ p {
     font-size: 2em;
 }
 
-.eightball:hover {
+#eightball {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#eightball:hover {
     cursor: pointer;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
