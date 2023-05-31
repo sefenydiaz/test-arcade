@@ -4,8 +4,7 @@ var containerArea = document.getElementById("container");
 
 function generateFortune () {
 	// console.log("Hello");
-	eightBallImg.classList.remove("animate__animated");
-	eightBallImg.classList.remove("animate__shakeX");
+
 
 	var magic8BallAnswers = [
 		"It is certain.",
@@ -37,6 +36,13 @@ function generateFortune () {
 	// console.log(magic8BallAnswers.length); // 20 items in array above
 	// console.log(Math.floor(Math.random() * 20)); //generates random number between 0-20
 	// console.log(magic8BallAnswers[0]); // confirms array starts at 0
+
+	eightBallImg.addEventListener('animationend', (event) => {
+		event.stopPropagation();
+		eightBallImg.classList.remove("animate__animated");
+		eightBallImg.classList.remove("animate__shakeX");
+
+});
 
 	//clear text area first
 	containerArea.innerHTML = "";
