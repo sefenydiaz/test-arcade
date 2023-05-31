@@ -59,13 +59,29 @@ try {
 	againButton.innerText = "That wasn't funny..."; 
 	document.getElementById("punchline").appendChild(againButton);
 
-	document.getElementById("againbutton").addEventListener('click', getDadJokes);
-
+	document.getElementById("againbutton").addEventListener('click', async () => {
+        await getDadJokes();
+        
+      });
+    }
+  } catch (error) {
+    console.error(error);
+  }
 }
 
-} catch (error) {
-	console.error(error);
-}}
 
 
+
+function makeStanley() {
+  var image = document.createElement("img");
+  image.id = 'jokeImage';
+  image.src = 'https://media.tenor.com/QWkkkIMIEHUAAAAC/eyeroll-stanley.gif';
+  image.alt = 'stanley';
+  image.style.display = 'none';
+  document.getElementById("dadjokecontainer").appendChild(image);
+  document.getElementById("jokeImage").style.display = "block";
+}
+
+
+makeStanley();
 getDadJokes();
