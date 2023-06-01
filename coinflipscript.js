@@ -18,6 +18,9 @@ function flipCoin () {
 		coinElement.classList.remove("animate__animated");
 		coinElement.classList.remove("animate__shakeX");
 
+//prepping random number 0 or 1 
+console.log(Math.floor(Math.random() * 2));
+
 });
 }
 
