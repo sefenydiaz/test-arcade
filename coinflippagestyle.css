@@ -1,10 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Geo&display=swap");
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #FFA69E; 
+    background-color: #2F4550;
 }
 
 #coin:hover {
     cursor: pointer;
+}
+
+#coin-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin-top:150px;
+}
+
+#outputtextcontainer {
+    text-align: center;
+    margin-bottom: 80px;
+    color: #FF299C;
+    font-family: 'Geo', cursive;
+    font-size: 60px;
 }
