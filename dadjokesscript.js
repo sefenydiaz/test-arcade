@@ -5,11 +5,12 @@ const options = {
 	method: 'GET',
 	headers: {
 		//'X-RapidAPI-Key': 'f0f29904e6mshef2e6c564d6894dp1e667djsnc65327931468', L's API Key
-		'X-RapidAPI-Key': '1c80cf076fmsh16ee6c98767b11dp1197c9jsn1b984ba5f989', // T's API KEY
+		// 'X-RapidAPI-Key': '1c80cf076fmsh16ee6c98767b11dp1197c9jsn1b984ba5f989', // T's API KEY
+		// 'X-RapidAPI-Key': 'bfc1725a7amshd77ff2ba08b5859p168d19jsn8a', //Sef's API KEY
 		'X-RapidAPI-Host': 'dad-jokes.p.rapidapi.com'
 	}
 };
-
+	console.log(options)
 try {
 
 	
@@ -55,22 +56,19 @@ try {
 
 	//<button type="button">That wasn't funny...</button>
 	var againButton = document.createElement("button");
-	againButton.id = 'againbutton';
-	againButton.innerText = "That wasn't funny..."; 
-	document.getElementById("punchline").appendChild(againButton);
-
-	document.getElementById("againbutton").addEventListener('click', async () => {
+      againButton.id = 'againbutton';
+      againButton.innerText = "That wasn't funny...";
+      document.getElementById("punchline").appendChild(againButton);
+      document.getElementById("againbutton").addEventListener('click', async () => {
         await getDadJokes();
-        
+        document.getElementById("jokeImage").style.display = "block";
       });
+      makeStanley();
     }
   } catch (error) {
     console.error(error);
   }
-}
-
-
-
+// }
 
 function makeStanley() {
   var image = document.createElement("img");
@@ -79,9 +77,6 @@ function makeStanley() {
   image.alt = 'stanley';
   image.style.display = 'none';
   document.getElementById("dadjokecontainer").appendChild(image);
-  document.getElementById("jokeImage").style.display = "block";
 }
-
-
-makeStanley();
-getDadJokes();
+}
+getDadJokes()
