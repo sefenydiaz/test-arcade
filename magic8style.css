@@ -18,6 +18,10 @@ p {
     /*z-index: 2;*/
 }
 
+#navbar {
+    position: fixed;
+    z-index: 2;
+}
 
 main {
     margin: 0;
