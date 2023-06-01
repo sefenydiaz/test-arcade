@@ -4,3 +4,7 @@
     box-sizing: border-box;
     background-color: #FFA69E; 
 }
+
+#coin:hover {
+    cursor: pointer;
+}
