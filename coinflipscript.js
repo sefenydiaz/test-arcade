@@ -5,7 +5,9 @@ var coinElement = document.getElementById("coin");
 //and append textbox that says heads or tails 
 
 function flipCoin () {
-    console.log("Hello"); 
+    console.log("Flip coin function has run"); 
+    coinElement.classList.add("animate__animated");
+	coinElement.classList.add("animate__flip");
 }
 
 //listen for click
