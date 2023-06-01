@@ -1,13 +1,13 @@
 .center-title {
     text-align: center;
-    font-family: 'Push Start P2', cursive;
+    font-family: 'Geo', cursive;
     font-size: 42pt;
     margin-top: 50px;
   }
 
   .description-thang {
     text-align: center;
-    font-family: 'Push Start P2', cursive;
+    font-family: 'Geo', cursive;
     font-size: 12pt;
     margin-top: 50px;
   }
@@ -17,6 +17,12 @@
     height: 500px;
 
     /*background: linear-gradient(0deg, #000, #272727);*/
+}
+
+body {
+    background-color: #2F4550;
+
+
 }
 
 .card:before,
