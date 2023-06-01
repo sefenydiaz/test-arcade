@@ -19,7 +19,13 @@ function flipCoin () {
 		coinElement.classList.remove("animate__shakeX");
 
 //prepping random number 0 or 1 
-console.log(Math.floor(Math.random() * 2));
+//console.log(Math.floor(Math.random() * 2));
+var headOrTails = Math.floor(Math.random() * 2);
+console.log(headOrTails);
+
+if (headOrTails === 1) {
+    document.getElementById("coin").src="cointailsresized.png";
+}
 
 });
 }
