@@ -1,16 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 .center-title {
     text-align: center;
-    font-family: 'Geo', cursive;
+    font-family: 'Press Start 2P', cursive;
     font-size: 42pt;
     margin-top: 50px;
-  }
+}
 
-  .description-thang {
+.description-thang {
     text-align: center;
     font-family: 'Geo', cursive;
     font-size: 12pt;
     margin-top: 50px;
-  }
+}
 
 .card {
     position: relative;
