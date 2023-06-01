@@ -1,5 +1,6 @@
 async function getJoke(){
-    const url = 'https://jokeapi-v2.p.rapidapi.com/joke/Any?format=json&contains=C%2523&idRange=0-150&blacklistFlags=nsfw%2Cracist';
+    // const jokeId = Math.floor(Math.random() * 150); // Generate a random joke ID within the range 0-150
+    const url = 'https://jokeapi-v2.p.rapidapi.com/joke/Programming?type=twopart&format=json&idRange=0-150&blacklistFlags=nsfw%2Cracist%2Csexist%2Cexplicit%2Cpolitical%2Creligious&safe-mode=true';
 const options = {
 	method: 'GET',
 	headers: {
@@ -7,7 +8,7 @@ const options = {
 		'X-RapidAPI-Host': 'jokeapi-v2.p.rapidapi.com'
 	}
 };
-    console.log(options)
+    // console.log(options)
     try {
       const response = await fetch(url, options);
     
@@ -23,7 +24,7 @@ const options = {
           const result = await response.text();
             console.log(result);
           const jokesConvertedObj = JSON.parse(result);
-	          console.log(jokesConvertedObj);
+	          console.log(jokesConvertedObj)
 
             document.getElementById("dadjokecontainer").innerHTML = "";
             
@@ -31,6 +32,7 @@ const options = {
             jokeElement.id = 'joke';
             
           var joke = jokesConvertedObj.setup;
+            // jokeElement.innerText = joke[Math.floor(Math.random() * 150)];
             jokeElement.innerText = joke;
             document.getElementById("dadjokecontainer").appendChild(jokeElement);
 
