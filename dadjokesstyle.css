@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Geo&display=swap");
 
 * {
     margin: 0;
     padding: 0; 
     box-sizing: border-box;
-    background-color: #462749;
+    background-color: #2F4550;
     color: #fff;
-    font-size: 1.2em;
-    font-family: 'Happy Monkey', cursive;
+    font-family: 'Geo', cursive;
+    font-size: 60px;
 }
 
 #dadjokecontainer {
@@ -21,5 +22,10 @@
 }
 
 button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #124559;
+    font-family: 'Geo', cursive;
+    font-size: 30px;
 }
