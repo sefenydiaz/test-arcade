@@ -1,6 +1,7 @@
 // Thank you to this video for the tutorial on how to create this game https://www.youtube.com/watch?v=PeY6lXPrPaA
 
 const INITIAL_VELOCITY = .025
+const VELOCITY_INCREASE = 0.000001
 
 class Ball {
     constructor(ballElem) {
@@ -45,6 +46,7 @@ class Ball {
     update(delta) {
         this.x += this.direction.x * this.velocity * delta
         this.y += this.direction.y * this.velocity * delta
+        this.velocity += VELOCITY_INCREASE * delta
         const rect = this.rect()
 
         if (rect.bottom >= window.innerHeight || rect.top <=0) {
