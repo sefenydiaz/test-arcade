@@ -19,13 +19,33 @@
     /* font-size: 4em; */
     text-align: center;
     margin-top: 20px;
+    margin: 5px;
 }
 
 button {
-    display: flex;
+    display: block;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    margin-top: 20px;
     background-color: #124559;
     font-family: 'Geo', cursive;
     font-size: 30px;
+}
+
+#againbutton{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Geo', cursive;
+    font-size: 30px;
+    margin: 5px;
+}
+
+#hilariousbutton{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Geo', cursive;
+    font-size: 30px;
+    margin: 5px;
 }
