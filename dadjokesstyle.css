@@ -62,18 +62,17 @@ button {
 
 #stanleyImage{
     display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
+    height: 500px;
+    width: auto;
     margin-top: 20px;
 
 }
 
 #michaelImage{
     display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
+    height: 500px;
+    width: auto;
+    object-fit: contain;
     margin-top: 20px;
 
 }
