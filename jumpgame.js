@@ -22,5 +22,11 @@ var checkHit = setInterval(function(){
     var blockPosition = 
     parseInt(window.getComputedStyle(block).getPropertyValue('left'));
 
+    if (blockPosition<20 && blockPosition>0 && playerPosition>=125){
+        block.style.animation = 'none';
+        block.style.display = 'none';
+        alert('you lose!');
+    }
+
 
 },10);
