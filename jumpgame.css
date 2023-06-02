@@ -25,4 +25,10 @@
     position: relative;
     top: 114px;
     left: 479px;
+    animation: block 1s;
+}
+
+@keyframes block{
+    0%{left: 480px;}
+    100%{left:-40px;}
 }
