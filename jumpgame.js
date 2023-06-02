@@ -26,7 +26,12 @@ var checkHit = setInterval(function(){
         block.style.animation = 'none';
         block.style.display = 'none';
         alert('you lose!');
+        endgame();
     }
 
 
 },10);
+
+function endgame(){
+    location.reload()
+}
