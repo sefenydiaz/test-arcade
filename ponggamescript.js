@@ -1,7 +1,5 @@
 // Thank you to this video for the tutorial on how to create this game https://www.youtube.com/watch?v=PeY6lXPrPaA
 
-//import Ball from '.Ball.js'
-
 const INITIAL_VELOCITY = .025
 
 class Ball {
@@ -29,8 +27,11 @@ class Ball {
     reset() {
         this.x = 50
         this.y = 50
-        this.direction = { x: 0.75, y: 0.5 } //unit vector
-        while (Math.abs(this.direction.x <= .2 || Math.abs(this.direction.x >= .9))) {
+        this.direction = { x: 0 } //unit vector
+        while (
+            Math.abs(this.direction.x)<= 0.2 || 
+            Math.abs(this.direction.x) >= .9
+            ) {
             const heading = randomNumberBetween(0, 2 * Math.PI)
             this.direction = { x: Math.cos(heading), y: Math.sin(heading)}
         }
@@ -39,7 +40,7 @@ class Ball {
 
     update(delta) {
         this.x += this.direction.x * this.velocity * delta
-        this.y = this.direction.y * this.velocity * delta
+        this.y += this.direction.y * this.velocity * delta
     }
 }
 
