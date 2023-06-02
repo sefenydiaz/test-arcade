@@ -199,14 +199,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    text-align: center;
+
 }
 
-.button {
+.material-icons {
     width: 20%;
     height: auto;
     background-color: black;
     color: #eff8e2;
+    margin: 0 auto;
 
 }
 
