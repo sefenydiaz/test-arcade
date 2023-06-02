@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #2F4550;
+}
+
+#jumpGame{
+    width: 500px;
+    height: 200px;
+    border: 10px dashed peachpuff;
+}
+
+#player{
+    width: 30px;
+    height: 60px;
+    background-color: aquamarine;
+    position: relative;
+    top: 140px;
+    
+}
+
+.animate{
+    animation: jump 500ms;
+}
+
+
+
+@keyframes jump{
+    0%{top: 140px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top:140px;}
+}
+
+#object{
+    width: 20px;
+    height: 25px;
+    background-color: blueviolet;
+    position: relative;
+    top: 114px;
+    left: 479px;
+    animation: block 1s infinite linear;
+}
+
+@keyframes block{
+    0%{left: 480px;}
+    100%{left:-40px;}
+}
