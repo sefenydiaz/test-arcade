@@ -1,5 +1,22 @@
 var user = document.getElementById('player');
 var block = document.getElementById('object');
+var countDownEl = document.getElementById('timer');
+
+function countTimer() {
+    var timeLeft = 5;
+    var timeInterval = setInterval(function () {
+      countDownEl.textContent = "Get Ready to Click In: " + timeLeft;
+      timeLeft--;
+
+      if(timeLeft < 0){
+        countDownEl.textContent = 'GO!';
+        clearInterval(timeInterval);
+      }
+    },1000);
+} 
+
+console.log(countTimer);
+   
 
 //user jump on click
 function jump(){
@@ -35,3 +52,6 @@ function endgame(){
     location.reload();
     
 }
+
+//Call functions
+countTimer();
