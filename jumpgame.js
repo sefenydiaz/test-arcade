@@ -1,7 +1,6 @@
 var user = document.getElementById('player');
 var block = document.getElementById('object');
 
-
 //user jump on click
 function jump(){
     if(user.classList != 'animate'){
@@ -33,5 +32,6 @@ var checkHit = setInterval(function(){
 },10);
 
 function endgame(){
-    location.reload()
+    location.reload();
+    
 }

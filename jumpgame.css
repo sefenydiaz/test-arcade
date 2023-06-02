@@ -40,6 +40,7 @@
     top: 114px;
     left: 479px;
     animation: block 1s infinite linear;
+    animation-delay: 1.5s;
 }
 
 @keyframes block{
