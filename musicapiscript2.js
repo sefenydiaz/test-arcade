@@ -14,7 +14,7 @@ async function getMusic() {
     try {
         const response = await fetch(url, options);
         const result = await response.text();
-        //console.log(result);
+        console.log(result);
         var resultParsed = (JSON.parse(result));
         //to get to mp3
         // console.log(resultParsed.data[0]);
