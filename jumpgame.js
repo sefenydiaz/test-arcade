@@ -40,8 +40,8 @@ var checkHit = setInterval(function(){
 
     if (blockPosition<20 && blockPosition>0 && playerPosition>=125){
         block.style.animation = 'none';
-        block.style.display = 'none';
-        alert('you lose!');
+        
+        // block.style.display = 'none';
         endgame();
     }
 
@@ -49,7 +49,12 @@ var checkHit = setInterval(function(){
 },10);
 
 function endgame(){
-    location.reload();
+    if(confirm("Would you like to play again?") === true){
+        location.reload();
+    }else{
+        countDownEl.textContent = '';
+    }
+    
     
 }
 
