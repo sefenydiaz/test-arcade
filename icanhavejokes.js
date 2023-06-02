@@ -75,12 +75,17 @@ const options = {
 // }
 
 function makeStanley() {
+  var imageContainer = document.createElement("div");
+  imageContainer.id = 'image-container';
+
   var image = document.createElement("img");
   image.id = 'stanleyImage';
   image.src = 'https://media.tenor.com/QWkkkIMIEHUAAAAC/eyeroll-stanley.gif';
   image.alt = 'stanley';
   image.style.display = 'none';
-  document.getElementById("dadjokecontainer").appendChild(image);
+
+  imageContainer.appendChild(stanleyImage);
+  document.getElementById("dadjokecontainer").appendChild(imageContainer);
 }
 function makeMichael(){
   var image = document.createElement("img");
