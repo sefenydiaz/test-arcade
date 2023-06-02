@@ -24,6 +24,12 @@ p {
 
 }
 
+.center:hover {
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094,
+            #0000ff, #00ff00, #ffff00, #ff0000);
+    color: black;
+}
+
 
 
 .home:hover {
@@ -93,7 +99,6 @@ main {
 #eightball-holder {
     z-index: 0;
     margin: 0;
-    height: 100%;
     width: auto;
 
 }
