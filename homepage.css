@@ -204,12 +204,20 @@ body {
 }
 
 .material-icons {
-    width: 20%;
-    height: auto;
+    /* width: 20%;
+    height: auto; */
     background-color: black;
     color: #eff8e2;
-    margin: 0 auto;
+    /* margin-right: 10px; */
+    font-size: 6rem;
 
+}
+
+#playbutton,
+#pausebutton,
+#downvolbutton,
+#upvolbutton {
+    width: 20%;
 }
 
 #playbutton:hover {
@@ -225,5 +233,5 @@ body {
 }
 
 #upvolbutton:hover {
-    background-color: #3f8efc;
+    background-color: yellow;
 }
