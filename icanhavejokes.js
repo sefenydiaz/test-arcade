@@ -55,17 +55,19 @@ const options = {
               document.getElementById("jokeImage").style.display = "block";
         });
 
-        var hilariousButton = document.createElement("button");
+          var hilariousButton = document.createElement("button");
             hilariousButton.id = 'hilariousbutton';
             hilariousButton.innerText = "That's hilarious!";
             document.getElementById("delivery").appendChild(hilariousButton);
             
-            hilariousButton.addEventListener('click', async () => {
+            document.getElementById("hilariousbutton").addEventListener('click', async () => {
                 await getJoke();
+                document.getElementById("jokImage").style.display = "block";
             });
       
             
       makeStanley();
+      makeMichael();
     }
   } catch (error) {
     console.error(error);
@@ -80,6 +82,15 @@ function makeStanley() {
   image.style.display = 'none';
   document.getElementById("dadjokecontainer").appendChild(image);
 }
+function makeMichael(){
+  var image = document.createElement("img");
+  image.id = 'jokImage';
+  image.src = 'https://media4.giphy.com/media/l0amJzVHIAfl7jMDos/giphy.gif?cid=ecf05e47tt3bylqkzxeq34fvydxbv09ansynntdm3rfk0j3x&ep=v1_gifs_search&rid=giphy.gif&ct=g';
+  image.alt = 'michael';
+  image.style.display = 'none';
+  document.getElementById("dadjokecontainer").appendChild(image);
+}
+
 }
 getJoke();
 
