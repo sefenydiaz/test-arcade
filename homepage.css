@@ -194,3 +194,34 @@ body {
 .card:after {
     filter: blur(50px);
 }
+
+#audiobox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.button {
+    width: 20%;
+    height: auto;
+    background-color: black;
+    color: #eff8e2;
+
+}
+
+#playbutton:hover {
+    background-color: #FF5F1F;
+}
+
+#pausebutton:hover {
+    background-color: #FF10F0;
+}
+
+#downvolbutton:hover {
+    background-color: #00ff00;
+}
+
+#upvolbutton:hover {
+    background-color: #3f8efc;
+}
