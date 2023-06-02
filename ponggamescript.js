@@ -3,6 +3,8 @@
 const INITIAL_VELOCITY = .025
 const VELOCITY_INCREASE = 0.000001
 
+
+
 class Ball {
     constructor(ballElem) {
        this.ballElem = ballElem 
@@ -59,11 +61,31 @@ class Ball {
     }
 }
 
+class Paddle {
+    constructor(paddleElem) {
+        this.paddleElem = paddleElem
+    }
+
+    get position() {
+        return parseFloat(
+            getComputedStyle(this.paddleElem).getPropertyValue("--position")
+            )
+    }
+
+    set position(value) {
+        this.paddleElem.style.setProperty("--position", value)
+    }
+}
+
+const ball = new Ball(document.getElementById("ball"))
+const playerPaddle = new Paddle(document.getElementById("player-paddle"))
+const computerPaddle = new Paddle(document.getElementById("computer-paddle"))
+
 function randomNumberBetween(min, max) {
     return Math.random() * (max- min) + min
 }
 
-const ball = new Ball(document.getElementById("ball"))
+
 
 //Update loop
 let lastTime
@@ -76,6 +98,10 @@ function update(time) {
     lastTime = time
     window.requestAnimationFrame(update)
 }
+
+document.addEventListener("mousemove", e => {
+    playerPaddle.position = (e.y / window.innerHeight) * 100
+})
 
 
 window.requestAnimationFrame(update)
