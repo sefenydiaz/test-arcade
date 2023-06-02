@@ -199,15 +199,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    text-align: center;
+
 }
 
-.button {
-    width: 20%;
-    height: auto;
+.material-icons {
+    /* width: 20%;
+    height: auto; */
     background-color: black;
     color: #eff8e2;
+    /* margin-right: 10px; */
+    font-size: 6rem;
 
+}
+
+#playbutton,
+#pausebutton,
+#downvolbutton,
+#upvolbutton {
+    width: 20%;
 }
 
 #playbutton:hover {
@@ -223,5 +233,5 @@ body {
 }
 
 #upvolbutton:hover {
-    background-color: #3f8efc;
+    background-color: yellow;
 }
