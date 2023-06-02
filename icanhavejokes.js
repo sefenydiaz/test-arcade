@@ -43,23 +43,36 @@ const options = {
 	          deliveryEl.id = 'delivery';
 	          document.getElementById("joke").appendChild(deliveryEl);
 
-            
+           // Create the button container and append it to the dadjokecontainer
+            var buttonContainer = document.createElement("div");
+            //buttonContainer.classList.add("button-container");
+            buttonContainer.id = "button-container";
+            document.getElementById("dadjokecontainer").appendChild(buttonContainer);
+
+       
+       
+       
+       
           var againButton = document.createElement("button");
       
-            againButton.id = 'againbutton';
-            againButton.innerText = "That wasn't funny...";
-            document.getElementById("delivery").appendChild(againButton);
+          againButton.id = 'againbutton';
+          againButton.innerText = "That wasn't funny...";
+          document.getElementById("button-container").appendChild(againButton);
             
-          document.getElementById("againbutton").addEventListener('click', async () => {
-              await getJoke();
-              makeStanley();
-              //document.getElementById("stanleyImage").style.display = "block";
-        });
+          
 
-          var hilariousButton = document.createElement("button");
-            hilariousButton.id = 'hilariousbutton';
-            hilariousButton.innerText = "That's hilarious!";
-            document.getElementById("delivery").appendChild(hilariousButton);
+
+          
+          document.getElementById("againbutton").addEventListener('click', async () => {
+            await getJoke();
+            makeStanley();
+            //document.getElementById("stanleyImage").style.display = "block";
+          });
+
+         var hilariousButton = document.createElement("button");
+          hilariousButton.id = 'hilariousbutton';
+           hilariousButton.innerText = "That's hilarious!";
+           document.getElementById("button-container").appendChild(hilariousButton);
             
             document.getElementById("hilariousbutton").addEventListener('click', async () => {
                 await getJoke();
@@ -78,7 +91,9 @@ const options = {
 
 function makeStanley() {
   var imageContainer = document.createElement("div");
-  imageContainer.id = 'image-container';
+  //imageContainer.id = 'image-container';
+  imageContainer.classList.add('image-container', 'stanley-image-container');
+
 
   var stanleyImage = document.createElement("img");
   stanleyImage.id = 'stanleyImage';
@@ -92,7 +107,8 @@ function makeStanley() {
 }
 function makeMichael(){
   var imageContainer = document.createElement("div");
-  imageContainer.id = 'image-container';
+  //imageContainer.id = 'image-container';
+  imageContainer.classList.add('image-container', 'michael-image-container');
 
   var michaelImage = document.createElement("img");
   michaelImage.id = 'michaelImage';

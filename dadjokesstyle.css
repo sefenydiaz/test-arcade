@@ -13,6 +13,7 @@
 
 #dadjokecontainer {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     /* margin-top: 20px; */
@@ -23,14 +24,21 @@
 }
 
 button {
-    display: block;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 20px; 
     background-color: #124559;
     font-family: 'Geo', cursive;
     font-size: 30px;
 }
+
+#button-container {
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: center;
+    margin-top: 20px;
+  }
 
 #againbutton{
     display: inline-block;
@@ -54,25 +62,38 @@ button {
 
 #image-container {
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
     align-items: center;
     justify-content: center;
     margin-top: 20px;
   }
 
 #stanleyImage{
-    display: block;
+    
     height: 500px;
     width: auto;
     margin-top: 20px;
-
+    object-fit: contain;
 }
 
 #michaelImage{
-    display: block;
+    
     height: 500px;
     width: auto;
     object-fit: contain;
     margin-top: 20px;
 
 }
+/*
+.stanley-image-container {
+   
+    margin: 1px;
+  }
+  
+  .michael-image-container {
+   
+    margin: 1px;
+  }
+
+*/
+  
