@@ -7,6 +7,28 @@
     background-color: #2F4550;
 }
 
+
+#navbar {
+    position: fixed;
+    z-index: 2;
+
+}
+
+.home:hover {
+    color: #ff299c;
+    background-color: #ffff00;
+}
+
+.dad:hover {
+    color: #ffe66d;
+    background-color: #3f8efc;
+}
+
+.eightball:hover {
+    color: #06d6a0;
+    background-color: rebeccapurple;
+}
+
 #coin:hover {
     cursor: pointer;
 }
