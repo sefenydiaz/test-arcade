@@ -24,6 +24,10 @@ class Ball {
         this.ballElem.style.setProperty("--y", value)
     }
 
+    rect() {
+        return this.ballElem.getBoundingClientRect()
+    }
+
     reset() {
         this.x = 50
         this.y = 50
@@ -41,6 +45,15 @@ class Ball {
     update(delta) {
         this.x += this.direction.x * this.velocity * delta
         this.y += this.direction.y * this.velocity * delta
+        const rect = this.rect()
+
+        if (rect.bottom >= window.innerHeight || rect.top <=0) {
+            this.direction.y *= -1
+        }
+
+        if (rect.right >= window.innerWidth || rect.left <=0) {
+            this.direction.x *= -1
+        }
     }
 }
 
