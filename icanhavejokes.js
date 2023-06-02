@@ -52,7 +52,7 @@ const options = {
             
           document.getElementById("againbutton").addEventListener('click', async () => {
               await getJoke();
-              document.getElementById("jokeImage").style.display = "block";
+              document.getElementById("stanleyImage").style.display = "block";
         });
 
           var hilariousButton = document.createElement("button");
@@ -62,7 +62,7 @@ const options = {
             
             document.getElementById("hilariousbutton").addEventListener('click', async () => {
                 await getJoke();
-                document.getElementById("jokImage").style.display = "block";
+                document.getElementById("michaelImage").style.display = "block";
             });
       
             
@@ -76,7 +76,7 @@ const options = {
 
 function makeStanley() {
   var image = document.createElement("img");
-  image.id = 'jokeImage';
+  image.id = 'stanleyImage';
   image.src = 'https://media.tenor.com/QWkkkIMIEHUAAAAC/eyeroll-stanley.gif';
   image.alt = 'stanley';
   image.style.display = 'none';
@@ -84,7 +84,7 @@ function makeStanley() {
 }
 function makeMichael(){
   var image = document.createElement("img");
-  image.id = 'jokImage';
+  image.id = 'michaelImage';
   image.src = 'https://media4.giphy.com/media/l0amJzVHIAfl7jMDos/giphy.gif?cid=ecf05e47tt3bylqkzxeq34fvydxbv09ansynntdm3rfk0j3x&ep=v1_gifs_search&rid=giphy.gif&ct=g';
   image.alt = 'michael';
   image.style.display = 'none';

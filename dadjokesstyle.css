@@ -37,6 +37,7 @@ button {
     align-items: center;
     justify-content: center;
     font-family: 'Geo', cursive;
+    color: #FF299C;
     font-size: 30px;
     margin: 5px;
 }
@@ -46,6 +47,7 @@ button {
     align-items: center;
     justify-content: center;
     font-family: 'Geo', cursive;
+    color: #06D6A0;
     font-size: 30px;
     margin: 5px;
 }
