@@ -43,31 +43,46 @@ const options = {
 	          deliveryEl.id = 'delivery';
 	          document.getElementById("joke").appendChild(deliveryEl);
 
-            
+           // Create the button container and append it to the dadjokecontainer
+            var buttonContainer = document.createElement("div");
+            //buttonContainer.classList.add("button-container");
+            buttonContainer.id = "button-container";
+            document.getElementById("dadjokecontainer").appendChild(buttonContainer);
+
+       
+       
+       
+       
           var againButton = document.createElement("button");
       
-            againButton.id = 'againbutton';
-            againButton.innerText = "That wasn't funny...";
-            document.getElementById("delivery").appendChild(againButton);
+          againButton.id = 'againbutton';
+          againButton.innerText = "That wasn't funny...";
+          document.getElementById("button-container").appendChild(againButton);
             
-          document.getElementById("againbutton").addEventListener('click', async () => {
-              await getJoke();
-              document.getElementById("jokeImage").style.display = "block";
-        });
+          
 
-          var hilariousButton = document.createElement("button");
-            hilariousButton.id = 'hilariousbutton';
-            hilariousButton.innerText = "That's hilarious!";
-            document.getElementById("delivery").appendChild(hilariousButton);
+
+          
+          document.getElementById("againbutton").addEventListener('click', async () => {
+            await getJoke();
+            makeStanley();
+            //document.getElementById("stanleyImage").style.display = "block";
+          });
+
+         var hilariousButton = document.createElement("button");
+          hilariousButton.id = 'hilariousbutton';
+           hilariousButton.innerText = "That's hilarious!";
+           document.getElementById("button-container").appendChild(hilariousButton);
             
             document.getElementById("hilariousbutton").addEventListener('click', async () => {
                 await getJoke();
-                document.getElementById("jokImage").style.display = "block";
+                makeMichael();
+                //document.getElementById("michaelImage").style.display = "block";
             });
       
             
-      makeStanley();
-      makeMichael();
+
+     
     }
   } catch (error) {
     console.error(error);
@@ -75,20 +90,35 @@ const options = {
 // }
 
 function makeStanley() {
-  var image = document.createElement("img");
-  image.id = 'jokeImage';
-  image.src = 'https://media.tenor.com/QWkkkIMIEHUAAAAC/eyeroll-stanley.gif';
-  image.alt = 'stanley';
-  image.style.display = 'none';
-  document.getElementById("dadjokecontainer").appendChild(image);
+  var imageContainer = document.createElement("div");
+  //imageContainer.id = 'image-container';
+  imageContainer.classList.add('image-container', 'stanley-image-container');
+
+
+  var stanleyImage = document.createElement("img");
+  stanleyImage.id = 'stanleyImage';
+  stanleyImage.src = 'https://media.tenor.com/QWkkkIMIEHUAAAAC/eyeroll-stanley.gif';
+  stanleyImage.alt = 'stanley';
+  //image.style.display = 'none';
+  //document.getElementById("dadjokecontainer").appendChild(image);
+
+  imageContainer.appendChild(stanleyImage);
+  document.getElementById("dadjokecontainer").appendChild(imageContainer);
 }
 function makeMichael(){
-  var image = document.createElement("img");
-  image.id = 'jokImage';
-  image.src = 'https://media4.giphy.com/media/l0amJzVHIAfl7jMDos/giphy.gif?cid=ecf05e47tt3bylqkzxeq34fvydxbv09ansynntdm3rfk0j3x&ep=v1_gifs_search&rid=giphy.gif&ct=g';
-  image.alt = 'michael';
-  image.style.display = 'none';
-  document.getElementById("dadjokecontainer").appendChild(image);
+  var imageContainer = document.createElement("div");
+  //imageContainer.id = 'image-container';
+  imageContainer.classList.add('image-container', 'michael-image-container');
+
+  var michaelImage = document.createElement("img");
+  michaelImage.id = 'michaelImage';
+  michaelImage.src = 'https://media4.giphy.com/media/l0amJzVHIAfl7jMDos/giphy.gif?cid=ecf05e47tt3bylqkzxeq34fvydxbv09ansynntdm3rfk0j3x&ep=v1_gifs_search&rid=giphy.gif&ct=g';
+  michaelImage.alt = 'michael';
+  //image.style.display = 'none';
+  //document.getElementById("dadjokecontainer").appendChild(image);
+
+  imageContainer.appendChild(michaelImage);
+  document.getElementById("dadjokecontainer").appendChild(imageContainer);
 }
 
 }
