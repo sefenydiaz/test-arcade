@@ -16,8 +16,14 @@
     background-color: aquamarine;
     position: relative;
     top: 140px;
-    animation: jump 500ms infinite;
+    
 }
+
+.animate{
+    animation: jump 500ms;
+}
+
+
 
 @keyframes jump{
     0%{top: 140px;}
