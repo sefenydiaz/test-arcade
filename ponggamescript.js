@@ -46,7 +46,7 @@ class Ball {
         this.velocity = INITIAL_VELOCITY
     }
 
-    update(delta) {
+    update(delta, paddleRects) {
         this.x += this.direction.x * this.velocity * delta
         this.y += this.direction.y * this.velocity * delta
         this.velocity += VELOCITY_INCREASE * delta
@@ -56,7 +56,7 @@ class Ball {
             this.direction.y *= -1
         }
 
-        if (rect.right >= window.innerWidth || rect.left <=0) {
+        if (paddleRects.some(r => isCollision(r, rect))) {
             this.direction.x *= -1
         }
     }
@@ -78,6 +78,10 @@ class Paddle {
         this.paddleElem.style.setProperty("--position", value)
     }
 
+    rect() {
+        return this.paddleElem.getBoundingClientRect()
+    }
+
     reset() {
         this.position = 50
     }
@@ -97,6 +101,15 @@ function randomNumberBetween(min, max) {
     return Math.random() * (max- min) + min
 }
 
+function isCollision (rect1, rect2) {
+    return (
+        rect1.left <= rect2.right &&
+        rect1.right >= rect2.left && 
+        rect1.top <= rect2.bottom && 
+        rect1.bottom >=rect2.top
+    )
+}
+
 
 
 //Update loop
@@ -104,7 +117,7 @@ let lastTime
 function update(time) {
     if (lastTime != null) {
         const delta = time - lastTime
-        ball.update(delta)
+        ball.update(delta, [playerPaddle.rect(), computerPaddle.rect()])
         computerPaddle.update(delta, ball.y)
 
         if (isLose()) handleLose() 
