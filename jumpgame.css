@@ -4,6 +4,11 @@
     background-color: #2F4550;
 }
 
+#container{
+    display: flex;
+    justify-content: center;
+}
+
 #jumpGame{
     width: 520px;
     height: 220px;
