@@ -50,8 +50,8 @@ body {
     top: calc(var(--y) * 1vh);
     border-radius: 50%; 
     transform: translateY(-50%, -50%);
-    width: 2.5vh;
-    height: 2.5vh; 
+    width: 10.5vh;
+    height: 10.5vh; 
 }
 
 .score {
