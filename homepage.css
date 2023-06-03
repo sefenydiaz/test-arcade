@@ -237,3 +237,7 @@ body {
 #upvolbutton:hover {
     background-color: yellow;
 }
+
+#favgame {
+    text-align: center;
+}
