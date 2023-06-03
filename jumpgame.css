@@ -4,9 +4,18 @@
     background-color: #2F4550;
 }
 
+#timer{
+    text-align: center;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+}
+
 #jumpGame{
-    width: 500px;
-    height: 200px;
+    width: 520px;
+    height: 220px;
     border: 10px dashed peachpuff;
 }
 
