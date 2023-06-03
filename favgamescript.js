@@ -44,6 +44,11 @@ function getFavGame() {
 
     var max = Math.max.apply(null,Object.keys(likes).map(function(x){ return likes[x] }));
     var faveGame = (Object.keys(likes).filter(function(x){ return likes[x] == max; })[0]);
+    console.log(typeof(faveGame));
+
+    if (typeof(faveGame) == 'undefined') {
+        return document.getElementById("favgame").innerText = "Your favorite game is not yet determined!";
+    }
 
     document.getElementById("favgame").innerText = "Your favorite game is " + faveGame + "!";
 
@@ -54,7 +59,6 @@ function getFavGame() {
 
 
 //add event listener, on click add to variable 
-
 document.getElementById("magic8").addEventListener('click', addClickMagic8);
 document.getElementById("dadjokes").addEventListener('click', addClickDadJokes);
 document.getElementById("jumpgame").addEventListener('click', addClickJumpGame);
