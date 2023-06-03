@@ -25,7 +25,7 @@ var headOrTails = Math.floor(Math.random() * 2);
 if (headOrTails === 1) {
         //clear text area first
 	outputTextContainer.innerHTML = "";
-    document.getElementById("coin").src="cointailsresized.png";
+    document.getElementById("coin").src="./assets/images/cointailsresized.png";
     var resultTextEl = document.createElement("p");
     resultTextEl.innerText = "Tails"
     outputTextContainer.appendChild(resultTextEl);
@@ -33,7 +33,7 @@ if (headOrTails === 1) {
 else {
         //clear text area first
 	outputTextContainer.innerHTML = "";
-    document.getElementById("coin").src="coinresized.png";
+    document.getElementById("coin").src="./assets/images/coinresized.png";
     var resultTextEl = document.createElement("p");
     resultTextEl.innerText = "Heads"
     outputTextContainer.appendChild(resultTextEl);
