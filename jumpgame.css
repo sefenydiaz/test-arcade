@@ -4,6 +4,10 @@
     background-color: #2F4550;
 }
 
+#timer{
+    text-align: center;
+}
+
 #container{
     display: flex;
     justify-content: center;
