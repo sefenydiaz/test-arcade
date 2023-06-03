@@ -1,66 +1,61 @@
-# test-arcade
-# <Your-Project-Title>
+# The Breakroom
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+The Breakroom is the perfect time-waster webpage for those slow days in the office. Click around and enjoy the wacky animations, truly funny jokes, intriguing fortunes, and master pong battle. 
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+This was our first project as part of the Columbia Unviersity Coding Bootcamp and we have all learned quite a bit about collaboration via the Agile workflow, Javascript, Materialize, and the inner workings of the internet (aka CSS and HTML). 
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+No installation required! This is simply a webpage. Access via this link: https://sefenydiaz.github.io/test-arcade/
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+Click into one of the four game blocks to play our awesome games.
+Magic 8 Ball: Click the ball to receive a fortune! Winning lotto numbers not included. 
+Jump Game: Click your mouse after the countdown to jump! This game may or may not be rigged. 
+Dad Jokes: Get hilarious (very questionable) jokes and click the reaction buttons to render an appropriate gif. You can totally use this to impress your friends. 
+Pong Game: Move your mouse up and down on this page to knock the 'ball' back to your virtual opponent.  
+
 
 To add a screenshot, create an assets/images folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
 
-![alt text](assets/images/screenshot.png)
+![alt text](assets/images/breakroomscreenshot.png)
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+Contributors: 
+Tawhid
+https://github.com/tawhidk9
+Sef
+https://github.com/sefenydiaz
+Lauren
+https://github.com/laurenmiller389 
+LeAnne
+https://github.com/branchwag
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+Thank you to the below tools, resources, and APIs for helping complete our project:
 
-If you followed tutorials, include links to those here as well.
+Materialize: https://materializecss.com/ 
+Animate CSS: https://animate.style/ 
+
+Dad Joke API:
+https://rapidapi.com/Sv443/api/jokeapi-v2
+Deezer Music API: https://rapidapi.com/deezerdevs/api/deezer-1 
+
+Tutorials: 
+Jump Game tutorial: https://www.youtube.com/watch?v=bG2BmmYr9NQ
+Pong Game tutorial: https://www.youtube.com/watch?v=PeY6lXPrPaA 
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-
-Badges aren't necessary, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
+MIT License
 
 ## How to Contribute
 
-If you created an application or package and would like other developers to contribute to it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+Follow the [Contributor Covenant](https://www.contributor-covenant.org/)!
 
 ## Tests
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+Play each game and make sure that the magic 8 ball gives you fortunes, the games continue to provide you with accurate scores and motion. Also feel free to test out our music API and let us know if it ever stops playing our cool jams.
