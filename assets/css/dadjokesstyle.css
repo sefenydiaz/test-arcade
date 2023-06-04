@@ -3,12 +3,38 @@
 
 * {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     box-sizing: border-box;
     background-color: #2F4550;
     color: #fff;
     font-family: 'Geo', cursive;
     font-size: 60px;
+}
+
+.home:hover {
+    color: #ff299c;
+    background-color: #ffff00;
+}
+
+.ball:hover {
+    color: #ffe66d;
+    background-color: #3f8efc;
+}
+
+.pong:hover {
+    color: #06d6a0;
+    background-color: rebeccapurple;
+}
+
+.jump:hover {
+    color: orange;
+    background-color: #ff299c;
+}
+
+.brand-logo.center:hover {
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094,
+            #0000ff, #00ff00, #ffff00, #ff0000);
+    color: black;
 }
 
 #dadjokecontainer {
@@ -27,7 +53,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px; 
+    margin-top: 20px;
     background-color: #124559;
     font-family: 'Geo', cursive;
     font-size: 30px;
@@ -38,9 +64,9 @@ button {
     /*flex-direction: column;*/
     align-items: center;
     margin-top: 20px;
-  }
+}
 
-#againbutton{
+#againbutton {
     display: inline-block;
     align-items: center;
     justify-content: center;
@@ -50,7 +76,7 @@ button {
     margin: 5px;
 }
 
-#hilariousbutton{
+#hilariousbutton {
     display: inline-block;
     align-items: center;
     justify-content: center;
@@ -66,18 +92,18 @@ button {
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-  }
+}
 
-#stanleyImage{
-    
+#stanleyImage {
+
     height: 500px;
     width: auto;
     margin-top: 20px;
     object-fit: contain;
 }
 
-#michaelImage{
-    
+#michaelImage {
+
     height: 500px;
     width: auto;
     object-fit: contain;
@@ -85,13 +111,14 @@ button {
 
 }
 
-.brand-logo.center{
+.brand-logo.center {
     font-size: 35pt;
-    
+
 }
 
-.home, .ball, .pong, .jump{
+.home,
+.ball,
+.pong,
+.jump {
     font-size: 15pt;
 }
-
-  
