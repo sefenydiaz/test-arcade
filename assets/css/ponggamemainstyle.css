@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Geo&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -17,12 +18,41 @@
 
 }
 
-.brand-logo.center{
+.brand-logo.center {
     font-size: 35pt;
-    
+
+}
+
+.home:hover {
+    color: #ff299c;
+    background-color: #ffff00;
+}
+
+.ball:hover {
+    color: #ffe66d;
+    background-color: #3f8efc;
+}
+
+.dad:hover {
+    color: #06d6a0;
+    background-color: rebeccapurple;
+}
+
+.jump:hover {
+    color: orange;
+    background-color: #ff299c;
+}
+
+.brand-logo.center:hover {
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094,
+            #0000ff, #00ff00, #ffff00, #ff0000);
+    color: black;
 }
 
 
-.home, .ball, .dad, .jump{
+.home,
+.ball,
+.dad,
+.jump {
     font-size: 15pt;
 }
