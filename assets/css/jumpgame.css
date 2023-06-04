@@ -4,6 +4,14 @@
     background-color: #2F4550;
 }
 
+:root {
+    --color-primary: #39FF14;
+    --color-secondary: #FFFF33;
+    --color-tertiary: #FF5F1F;
+    --color-quaternary: #FF10F0;
+    --color-quinary: #9D00FF;
+}
+
 #timer{
     text-align: center;
 }
@@ -59,4 +67,49 @@
 @keyframes block{
     0%{left: 480px;}
     100%{left:-40px;}
+}
+
+#audiobox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#playbutton,
+#pausebutton,
+#downvolbutton,
+#upvolbutton {
+    width: 20%;
+}
+
+#playbutton:hover {
+    background-color: #FF5F1F;
+}
+
+#pausebutton:hover {
+    background-color: #FF10F0;
+}
+
+#downvolbutton:hover {
+    background-color: #00ff00;
+}
+
+#upvolbutton:hover {
+    background-color: yellow;
+}
+
+#favgame {
+    text-align: center;
+}
+
+.material-icons {
+    /* width: 20%;
+    height: auto; */
+    background-color: black;
+    color: #eff8e2;
+    /* margin-right: 10px; */
+    font-size: 6rem;
+
 }
