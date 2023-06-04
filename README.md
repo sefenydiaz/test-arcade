@@ -12,41 +12,57 @@ No installation required! This is simply a webpage. Access via this link: https:
 
 ## Usage
 
-Click into one of the four game blocks to play our awesome games.
-Magic 8 Ball: Click the ball to receive a fortune! Winning lotto numbers not included. 
-Jump Game: Click your mouse after the countdown to jump! This game may or may not be rigged. 
-Dad Jokes: Get hilarious (very questionable) jokes and click the reaction buttons to render an appropriate gif. You can totally use this to impress your friends. 
+Click into one of the four game blocks to play our awesome games.  
+
+Magic 8 Ball: Click the ball to receive a fortune! Winning lotto numbers not included.  
+
+Jump Game: Click your mouse after the countdown to jump! This game may or may not be rigged.  
+
+Dad Jokes: Get hilarious (very questionable) jokes and click the reaction buttons to render an appropriate gif. You can totally use this to impress your friends.  
+
 Pong Game: Move your mouse up and down on this page to knock the 'ball' back to your virtual opponent.  
-
-
-To add a screenshot, create an assets/images folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
 
 ![alt text](assets/images/breakroomscreenshot.png)
 
 ## Credits
 
-Contributors: 
+Contributors:  
+
 Tawhid
-https://github.com/tawhidk9
+https://github.com/tawhidk9  
+
 Sef
-https://github.com/sefenydiaz
+https://github.com/sefenydiaz  
+
 Lauren
-https://github.com/laurenmiller389 
+https://github.com/laurenmiller389  
+
 LeAnne
-https://github.com/branchwag
+https://github.com/branchwag  
+  
 
-Thank you to the below tools, resources, and APIs for helping complete our project:
+  
 
-Materialize: https://materializecss.com/ 
-Animate CSS: https://animate.style/ 
+Thank you to the below tools, resources, and APIs for helping complete our project:  
 
-Dad Joke API:
-https://rapidapi.com/Sv443/api/jokeapi-v2
-Deezer Music API: https://rapidapi.com/deezerdevs/api/deezer-1 
 
-Tutorials: 
-Jump Game tutorial: https://www.youtube.com/watch?v=bG2BmmYr9NQ
-Pong Game tutorial: https://www.youtube.com/watch?v=PeY6lXPrPaA 
+Materialize: https://materializecss.com/   
+
+Animate CSS: https://animate.style/   
+
+
+Dad Joke API:  https://rapidapi.com/Sv443/api/jokeapi-v2  
+
+Deezer Music API: https://rapidapi.com/deezerdevs/api/deezer-1   
+  
+
+
+Tutorials:  
+
+Jump Game tutorial: https://www.youtube.com/watch?v=bG2BmmYr9NQ    
+
+Pong Game tutorial: https://www.youtube.com/watch?v=PeY6lXPrPaA  
+
 
 ## License
 
