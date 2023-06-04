@@ -17,6 +17,31 @@
     --color-quaternary: #FF10F0;
     --color-quinary: #9D00FF;
 } */
+.home:hover {
+    color: #ff299c;
+    background-color: #ffff00;
+}
+
+.ball:hover {
+    color: #ffe66d;
+    background-color: #3f8efc;
+}
+
+.dad:hover {
+    color: #06d6a0;
+    background-color: rebeccapurple;
+}
+
+.pong:hover {
+    color: orange;
+    background-color: #ff299c;
+}
+
+.brand-logo.center:hover {
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094,
+            #0000ff, #00ff00, #ffff00, #ff0000);
+    color: black;
+}
 
 #timer {
     text-align: center;
