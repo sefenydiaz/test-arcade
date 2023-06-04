@@ -2,7 +2,7 @@
 
 async function getMusic() {
     
-    const url = 'https://deezerdevs-deezer.p.rapidapi.com/search?q=jumparound';
+    const url = 'https://deezerdevs-deezer.p.rapidapi.com/search?q=mariocircuit';
     const options = {
         method: 'GET',
         headers: {
