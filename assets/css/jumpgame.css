@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Geo&display=swap");
 
-*{
+* {
     padding: 0;
     margin: 0;
     background-color: #2F4550;
@@ -10,30 +10,30 @@
     font-size: 60pt;
 }
 
-:root {
+/* :root {
     --color-primary: #39FF14;
     --color-secondary: #FFFF33;
     --color-tertiary: #FF5F1F;
     --color-quaternary: #FF10F0;
     --color-quinary: #9D00FF;
-}
+} */
 
-#timer{
+#timer {
     text-align: center;
 }
 
-#container{
+#container {
     display: flex;
     justify-content: center;
 }
 
-#jumpGame{
+#jumpGame {
     width: 520px;
     height: 220px;
     border: 10px dashed peachpuff;
 }
 
-#player{
+#player {
     width: 40px;
     height: 60px;
     background-color: aquamarine;
@@ -42,32 +42,46 @@
     background-image: url(./picsforjumpgame/Prisonmike.jpg);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat ;
+    background-repeat: no-repeat;
 }
 
-.animate{
+.animate {
     animation: jump 500ms;
 }
 
-.brand-logo.center{
+.brand-logo.center {
     font-size: 35pt;
-    
+
 }
 
 
-.home, .ball, .dad, .pong{
+.home,
+.ball,
+.dad,
+.pong {
     font-size: 15pt;
 }
 
 
-@keyframes jump{
-    0%{top: 140px;}
-    30%{top: 100px;}
-    70%{top: 100px;}
-    100%{top:140px;}
+@keyframes jump {
+    0% {
+        top: 140px;
+    }
+
+    30% {
+        top: 100px;
+    }
+
+    70% {
+        top: 100px;
+    }
+
+    100% {
+        top: 140px;
+    }
 }
 
-#object{
+#object {
     width: 20px;
     height: 25px;
     background-color: blueviolet;
@@ -79,9 +93,14 @@
     background-image: url(./picsforjumpgame/killerdwight.jpg);
 }
 
-@keyframes block{
-    0%{left: 480px;}
-    100%{left:-40px;}
+@keyframes block {
+    0% {
+        left: 480px;
+    }
+
+    100% {
+        left: -40px;
+    }
 }
 
 #audiobox {
