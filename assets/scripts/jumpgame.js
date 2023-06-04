@@ -42,21 +42,27 @@ var checkHit = setInterval(function(){
         block.style.animation = 'none';
         
         // block.style.display = 'none';
-        endgame();
+        endGame();
     }
 
 
 },10);
 
-function endgame(){
-    if(confirm("Would you like to play again?") === true){
-        location.reload();
-    }else{
-        countDownEl.textContent = '';
-    }
-    
-    
-}
+function endGame() {
+    countDownEl.textContent = '';
+
+    var imageElement = document.createElement('img');
+    imageElement.src = "assets/images/youlose.gif"
+    document.body.appendChild(imageElement);
+  
+    // Create a "Try Again?" button element
+    var buttonElement = document.createElement('button');
+    buttonElement.innerText = 'Try Again?';
+    buttonElement.addEventListener('click', function() {
+      location.reload(); // Reload the page when the button is clicked
+    });
+    document.body.appendChild(buttonElement);
+  }
 
 //Call functions
 countTimer();
