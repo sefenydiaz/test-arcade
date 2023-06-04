@@ -84,16 +84,14 @@ button {
     margin-top: 20px;
 
 }
-/*
-.stanley-image-container {
-   
-    margin: 1px;
-  }
-  
-  .michael-image-container {
-   
-    margin: 1px;
-  }
 
-*/
+.brand-logo.center{
+    font-size: 35pt;
+    
+}
+
+.home, .ball, .pong, .jump{
+    font-size: 15pt;
+}
+
   
