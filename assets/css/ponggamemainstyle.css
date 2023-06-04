@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Geo&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2F4550;
+    color: #fff;
+    font-family: 'Geo', cursive;
+    font-size: 60pt;
+}
+
+
+#navbar {
+    position: fixed;
+    z-index: 2;
+
+}
+
+.brand-logo.center{
+    font-size: 35pt;
+    
+}
+
+
+.home, .ball, .dad, .jump{
+    font-size: 15pt;
+}
