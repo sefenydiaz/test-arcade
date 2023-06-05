@@ -122,3 +122,13 @@ button {
 .jump {
     font-size: 15pt;
 }
+
+.material-icons {
+    /* width: 20%;
+    height: auto; */
+    background-color: black;
+    color: #eff8e2;
+    /* margin-right: 10px; */
+    font-size: 6rem;
+
+}
