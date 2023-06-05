@@ -142,3 +142,44 @@ main {
 .container {
     margin: 0;
 }
+
+#audiobox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.material-icons {
+    /* width: 20%;
+    height: auto; */
+    background-color: black;
+    color: #eff8e2;
+    /* margin-right: 10px; */
+    font-size: 6rem;
+
+}
+
+#playbutton,
+#pausebutton,
+#downvolbutton,
+#upvolbutton {
+    width: 20%;
+}
+
+#playbutton:hover {
+    background-color: #FF5F1F;
+}
+
+#pausebutton:hover {
+    background-color: #FF10F0;
+}
+
+#downvolbutton:hover {
+    background-color: #00ff00;
+}
+
+#upvolbutton:hover {
+    background-color: yellow;
+}
